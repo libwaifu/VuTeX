@@ -1,0 +1,1 @@
+- @vuepress/plugin-back-to-top

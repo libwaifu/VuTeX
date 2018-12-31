@@ -1,0 +1,13 @@
+<!-- 括号 -->
+\def\|#1{\left|#1\right|}
+\def\(#1{\left(#1\right)}
+\def\[#1{\left[#1\right]}
+\def\<#1{\left<#1\right>}
+\def\{#1{\left\{#1\right\}}
+<!-- 正体 -->
+\def\dd{\,\mathrm{d}}
+\def\e{\mathrm{e}}
+<!-- 数域 -->
+\def\CC{\mathbf{C}}
+\def\RR{\mathbf{R}}
+<!-- 反三角函数 -->

@@ -1,0 +1,14 @@
+{
+  "name": "vutex.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "start": "yarn dev && start http://localhost:8080"
+  },
+  "devDependencies": {
+    "@vutex/vuepress-theme-vutex": "^0.1.0",
+    "vuepress": "^1.0.0-alpha.30"
+  }
+}

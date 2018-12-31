@@ -1,0 +1,13 @@
+{
+    "packages": [
+        "vuepress-plugin-math",
+        "vuepress-theme-vutex",
+        "vutex.github.io"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "useWorkspaces": true,
+    "npmClient": "yarn",
+    "version": "independent"
+}

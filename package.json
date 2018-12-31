@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "workspaces": [
+    "vuepress-plugin-math",
+    "vuepress-theme-vutex",
+    "vutex.github.io"
+  ],
+  "scripts": {
+    "tsc": "tsc -b",
+    "dev": "tsc -b && yarn workspace vutex.github.io dev",
+    "build": "tsc -b && yarn workspace vutex.github.io build",
+    "bootstrap": "lerna bootstrap --no-ci --npm-client yarn",
+    "start": "yarn dev && start http://localhost:8080",
+    "deploy": "bash build/deploy.sh",
+    "lint": "tslint */lib/*.ts && eslint .",
+    "lint:fix": "tslint */lib/*.ts --fix && eslint . --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "eslint": "^5.11.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "lerna": "^3.8.1",
+    "ts-loader": "^5.3.2",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "dependencies": {
+    "global": "^4.3.2",
+    "jshint": "^2.9.7",
+    "vuepress": "^0.14.8"
+  }
+}
