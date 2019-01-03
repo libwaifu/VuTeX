@@ -6,7 +6,6 @@
   "main": "index.js",
   "dependencies": {
     "@moefe/vue-aplayer": "^2.0.0-beta.5",
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.20",
     "@vuepress/plugin-google-analytics": "^1.0.0-alpha.20",
     "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.20",
     "@vuepress/plugin-pwa": "^1.0.0-alpha.20",
