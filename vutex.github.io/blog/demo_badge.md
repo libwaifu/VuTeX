@@ -1,6 +1,6 @@
 ---
 title: Badge
-type: draft
+type: post
 tag: [test]
 ---
 
@@ -22,3 +22,7 @@ test5 test6
 :::
 
 
+<Debugger/>
+
+<Badge text="0.10.1+"/>2
+<Copyright/> 

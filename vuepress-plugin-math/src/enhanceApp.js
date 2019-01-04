@@ -1,18 +1,13 @@
 import './index.styl';
 import parseMacro from '../lib/charMacro';
 
-export default () => {
+export default ({ Vue }) => {
   if (window.MathJax) return;
   const script = document.createElement('script');
   script.setAttribute('src', '//cdn.bootcss.com/mathjax/2.7.5/MathJax.js');
   document.head.appendChild(script);
-export default ({ Vue }) => {
-  if (window.MathJax) return
-  const script = document.createElement('script')
-  script.setAttribute('src', '//cdn.bootcss.com/mathjax/2.7.5/MathJax.js')
-  document.head.appendChild(script)
   script.addEventListener('load', () => {
-    Vue.prototype.mathjax = window.MathJax
+    Vue.prototype.mathjax = window.MathJax;
     window.MathJax.Hub.Config({
       showProcessingMessages: false,
       messageStyle: 'none',
@@ -59,6 +54,6 @@ export default ({ Vue }) => {
   // 点开新界面必然导致有 DOM 被移除
   document.addEventListener('DOMNodeRemoved', () => {
     window.MathJax.Hub.Queue(['Typeset', window.MathJax.Hub]);
-  })
+  });
   // Todo: 长公式滑动条监听鼠标滚轮
 };

@@ -5,7 +5,7 @@
     <remote-js src="//unpkg.com/sweetalert/dist/sweetalert.min.js"></remote-js>
     <p>
       <span>本文标题:</span>
-      <!--a href="{{ url_for(page.path) }}">{{ page.title }}</a-->
+      <a href="{{ url+$page.path }}">{{ $page.title }}</a>
     </p>
     <p>
       <span>文章作者:</span>
@@ -14,7 +14,7 @@
     <p>
       <span>发布时间:</span>
       <!--span>{{ page.date.format("YYYY年MM月DD日 - HH:MM") }}</span-->
-       <span>page.date.format("YYYY年MM月DD日 - HH:MM") </span>
+      <span>page.date.format("YYYY年MM月DD日 - HH:MM")</span>
     </p>
     <p>
       <span>原始链接:</span>
@@ -36,19 +36,25 @@
   </div>
 </template>
 
-<!--script>
-var clipboard = new Clipboard(".fa-clipboard");
-$(".fa-clipboard").click(function() {
-  clipboard.on("success", function() {
-    swal({
-      title: "",
-      text: "复制成功",
-      icon: "success",
-      showConfirmButton: true
-    });
-  });
-});
-</script-->
+<script>
+export default {
+  mounted() {
+    cdn("//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js");
+  },
+  methods: {
+    cdn(url) {
+      const plugin = document.createElement("script");
+      plugin.setAttribute("src", url);
+      plugin.async = false;
+      document.head.appendChild(plugin);
+    },
+    check(){
+      console.log($site)
+      console.log($page)
+    }
+  }
+};
+</script>
 
 <style lang="stylus">
 .my_post_copyright {
@@ -100,7 +106,6 @@ $(".fa-clipboard").click(function() {
 .my_post_copyright .copy-path {
   margin-left: 1em;
   width: 1em;
-
 }
 
 .my_post_copyright .copy-path:hover {

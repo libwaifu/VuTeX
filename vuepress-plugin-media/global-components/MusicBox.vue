@@ -1,7 +1,6 @@
 <template>
   <!-- prettier-ignore -->
   <div id="app">
-    <aplayer :audio="audio" :lrcType="3" />
     <aplayer :audio="audio" :lrcType="3" fixed />
   </div>
 </template>
