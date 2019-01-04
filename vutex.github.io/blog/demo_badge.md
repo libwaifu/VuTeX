@@ -21,5 +21,8 @@ test4
 test5 test6
 :::
 
+
+<Debugger/>
+
 <Badge text="0.10.1+"/>2
 <Copyright/> 
