@@ -12,7 +12,7 @@ module.exports = md => {
   md.use(...createContainer('def', 'Definition'))
   md.use(...createContainer('theo', 'Theorem'))
   md.use(...createContainer('lemma', 'Lemma'))
-  md.use(...createContainer('inte', 'Inference'))
+  md.use(...createContainer('inter', 'Inference'))
   md.use(...createContainer('prop', 'Proposition'))
   md.use(...createContainer('hypo', 'Hypothesis'))
   md.use(...createContainer('conj', 'Conjecture'))
@@ -22,7 +22,7 @@ module.exports = md => {
 
 
 function capitalize(str) {
-  return str.toLowerCase().replace(/\b[a-z]/g,function(s){return s.toUpperCase();});
+  return str.toLowerCase().replace(/\b[a-z]/g,function(s){return s.toUpperCase()})
 }
 
 function createContainer (klass, defaultTitle) {
@@ -34,7 +34,7 @@ function createContainer (klass, defaultTitle) {
       if (token.nesting === 1) {
         return `<div class="${klass} math-block">${title}`
       } else {
-        return `</div>\n`
+        return '</div>\n'
       }
     }
   }]

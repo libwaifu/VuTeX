@@ -1,0 +1,10 @@
+@host = https://api.bilibili.com
+
+
+### 获取 cover
+GET {{host}}/x/web-interface/view?aid=706
+
+### 获取 url
+GET {{host}}/x/player/playurl?avid=28690&cid=47729&otype=json
+
+

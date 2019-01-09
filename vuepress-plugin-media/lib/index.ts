@@ -1,4 +1,4 @@
-const url = require('http')
+const url = require("http");
 /* 
 
 register={
@@ -20,24 +20,35 @@ register={
 */
 
 const unknow = {
-    name: 'Unknow Audio',
-    artist: 'Unknow Artist',
-    cover: 'http://static.hdslb.com/images/akari.jpg',
-    lyric: ''
-}
+  name: "Unknow Audio",
+  artist: "Unknow Artist",
+  cover: "http://static.hdslb.com/images/akari.jpg",
+  lyric: ""
+};
 
 export function getAudio(url: string): AudioT {
-    return {
-        url: url,
-        name: 'string',
-        artist: 'string',
-        cover: 'string',
-        lyric: 'string'
-    }
+  return {
+    url: url,
+    name: "string",
+    artist: "string",
+    cover: "string",
+    lyric: "string"
+  };
 }
 
-var input_url = 'https://music.163.com/#/song?id=28160230'
+var input_url = "https://music.163.com/#/song?id=28160230";
 
-let parser = url.parse(input_url.split('#/').join(''))
-let task = parser.pathname.split('/')[1]
+let parser = url.parse(input_url.split("#/").join(""));
+let task = parser.pathname.split("/")[1];
 //let idd = parser.query.id;
+
+
+
+
+
+
+
+
+
+
+
