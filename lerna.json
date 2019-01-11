@@ -1,5 +1,6 @@
 {
     "packages": [
+        "vuepress-plugin-component-container",
         "vuepress-plugin-math",
         "vuepress-plugin-widget",
         "vuepress-theme-vutex",

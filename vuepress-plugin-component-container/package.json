@@ -1,0 +1,14 @@
+{
+  "name": "@vutex/vuepress-plugin-component-container",
+  "version": "0.1.0",
+  "description": "test",
+  "author": "test",
+  "main": "index.js",
+  "dependencies": {
+    "js-yaml": "^3.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "@types/markdown-it": "^0.0.7"
+  }
+}
