@@ -10,6 +10,7 @@ module.exports = {
             },
         },
         '@vutex/math': {},
+        '@vutex/media': {},
         '@vuepress/google-analytics': {},
         '@vuepress/back-to-top': {},
         '@vuepress/medium-zoom': {},

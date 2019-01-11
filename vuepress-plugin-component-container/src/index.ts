@@ -1,13 +1,29 @@
-const yaml = require('js-yaml')
+import * as MarkdownIt from 'markdown-it'
+import * as yaml from 'js-yaml'
 
-module.exports = options => ({
-    extendMarkdown: md => {
+interface Options {
+    minMarkers?: number
+    markerChar?: string
+    alias?: Record<string, string>
+    prefix?: string
+}
+
+type Token = MarkdownIt.TokenRender extends (token: (infer T)[], ...args: any) => any ? T : any
+
+interface ContainerToken extends Token {
+    name: string
+    param: string
+    data: object
+}
+
+export = (options: Options) => ({
+    extendMarkdown(md: MarkdownIt) {
         const minMarkers = options.minMarkers || 3
         const markerChar = options.markerChar || '%'
         const alias = options.alias || {}
         const prefix = options.prefix || ''
     
-        function container(state, startLine, endLine, silent) {
+        function container(state, startLine: number, endLine: number, silent: boolean) {
             let autoClosed = false
             let pos, nextLine
             let start = state.bMarks[startLine] + state.tShift[startLine]
@@ -25,8 +41,8 @@ module.exports = options => ({
             const markerCount = pos - start
             if (markerCount < minMarkers) return false
     
-            const markup = state.src.slice(start, pos)
-            const params = state.src.slice(pos, max)
+            const markup = state.src.slice(start, pos) as string
+            const params = state.src.slice(pos, max) as string
     
             // Since start is found, we can report success here in validation mode
             if (silent) return true
@@ -50,14 +66,14 @@ module.exports = options => ({
     
                 // closing code fence must be at least as long as the opening one
                 if (pos - start < markerCount) {
-                    continue; 
+                    continue
                 }
     
                 // make sure tail has spaces only
                 pos = state.skipSpaces(pos)
     
                 if (pos < max) {
-                    continue; 
+                    continue
                 }
     
                 // found!
@@ -90,12 +106,12 @@ module.exports = options => ({
             return true
         }
     
-        md.block.ruler.before('fence', 'component-container', container, {
+        md.block.ruler.before('fence', 'component-container', container as any, {
             alt: [ 'paragraph', 'reference', 'blockquote', 'list' ],
         })
     
         md.renderer.rules['component-container'] = (tokens, index) => {
-            const token = tokens[index]
+            const token = tokens[index] as ContainerToken
             if (!token.name) return ''
             const data = JSON.stringify(token.data || null).replace(/"/g, '\'')
             const name = prefix + (token.name in alias ? alias[token.name] : token.name)
