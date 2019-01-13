@@ -25,9 +25,9 @@ module.exports = {
                     frontmatter: { layout: 'Activity' },
                 },
             ],
-            tagUrl: '/tags/',
-            categoryUrl: '/categories/',
+            tagUrl: '/tag/',
+            categoryUrl: '/category/',
         },
-        '@yubisaki/pagination': 'flowchart',
+        '@yubisaki/pagination': {},
     },
 };

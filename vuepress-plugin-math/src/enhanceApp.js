@@ -1,4 +1,4 @@
-import './index.styl';
+import '../styles/index.styl';
 import parseMacro from '../lib/charMacro';
 
 export default ({ Vue }) => {

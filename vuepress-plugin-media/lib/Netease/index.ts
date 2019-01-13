@@ -6,7 +6,10 @@ https://github.com/darknessomi/musicbox/wiki/网易云音乐新版WebAPI分析�
 https://github.com/Binaryify/NeteaseCloudMusicApi 
 */
 
-
+/*
+外链: http://music.163.com/song/media/outer/url?id=618325.mp3
+歌词: http://music.163.com/api/song/media?id=618325
+*/
 
 
 
