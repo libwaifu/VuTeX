@@ -1,7 +1,9 @@
 {
   "private": true,
   "workspaces": [
+    "vuepress-plugin-component-container",
     "vuepress-plugin-math",
+    "vuepress-plugin-media",
     "vuepress-theme-vutex",
     "vutex.github.io"
   ],

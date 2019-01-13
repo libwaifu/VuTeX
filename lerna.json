@@ -1,6 +1,8 @@
 {
     "packages": [
+        "vuepress-plugin-component-container",
         "vuepress-plugin-math",
+        "vuepress-plugin-media",
         "vuepress-plugin-widget",
         "vuepress-theme-vutex",
         "vutex.github.io"

@@ -25,7 +25,7 @@ export default {
           },
           {
             text: 'custom2',
-            click: (player) => {
+            click(player) {
               console.log(player);
             }
           }

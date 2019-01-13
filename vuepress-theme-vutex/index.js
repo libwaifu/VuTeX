@@ -3,7 +3,14 @@ const path = require('path');
 module.exports = {
     layoutDir: 'layouts',
     plugins: {
+        '@vutex/component-container': {
+            prefix: 'custom-',
+            alias: {
+                music: 'audio',
+            },
+        },
         '@vutex/math': {},
+        '@vutex/media': {},
         '@vuepress/google-analytics': {},
         '@vuepress/back-to-top': {},
         '@vuepress/medium-zoom': {},
@@ -22,8 +29,5 @@ module.exports = {
             categoryUrl: '/category/',
         },
         '@yubisaki/pagination': {},
-    },
-    extendMarkdown: md => {
-        md.use(require('./lib/throwContainer'))
     },
 };
