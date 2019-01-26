@@ -8,9 +8,9 @@
 
 # Build
 node_modules/
-static/
-dist/
-/*/out/
+**/static/
+**/dist/
+**/out/
 
 # log
 npm-debug.log
