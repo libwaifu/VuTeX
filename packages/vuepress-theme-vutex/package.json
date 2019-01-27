@@ -1,6 +1,6 @@
 {
   "name": "@vutex/vuepress-theme-vutex",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "test",
   "author": "shigma <1700011071@pku.edu.cn>",
   "main": "index.js",
