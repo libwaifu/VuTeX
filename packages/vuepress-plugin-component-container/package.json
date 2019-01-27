@@ -1,0 +1,18 @@
+{
+  "name": "@vutex/vuepress-plugin-component-container",
+  "version": "0.1.0",
+  "description": "test",
+  "author": "shigma <1700011071@pku.edu.cn>",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "js-yaml": "^3.12.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^3.11.4",
+    "@types/markdown-it": "^0.0.7"
+  }
+}
