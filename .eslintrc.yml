@@ -9,9 +9,6 @@ parserOptions:
   ecmaVersion: 2018
 
 rules: 
-  arrow-parens:
-    - warn
-    - as-needed
   arrow-spacing: warn
   block-spacing: warn
   brace-style: warn

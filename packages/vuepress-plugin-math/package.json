@@ -1,8 +1,9 @@
 {
   "name": "@vutex/vuepress-plugin-math",
   "version": "0.1.0",
-  "description": "test",
-  "author": "test",
+  "description": "A vuepress plugin which provides support for latex syntax in markdown files.",
+  "author": "shigma <1700011071@pku.edu.cn>",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "build": "stylus styles/index.styl -o dist/index.css -P -r"

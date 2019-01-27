@@ -2,10 +2,10 @@
   "name": "@vutex/vuepress-theme-vutex",
   "version": "0.1.0",
   "description": "test",
-  "author": "test",
+  "author": "shigma <1700011071@pku.edu.cn>",
   "main": "index.js",
+  "license": "MIT",
   "dependencies": {
-    "@moefe/vue-aplayer": "^2.0.0-beta.5",
     "@vuepress/plugin-google-analytics": "^1.0.0-alpha.20",
     "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.20",
     "@vuepress/plugin-pwa": "^1.0.0-alpha.20",
@@ -22,7 +22,6 @@
     "date-fns": "^1.29.0",
     "github-markdown-css": "^2.10.0",
     "html2canvas": "^1.0.0-alpha.12",
-    "js-yaml": "^3.12.0",
     "markdown-it-anchor": "^5.0.2",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-task-lists": "^2.1.1",
@@ -30,7 +29,6 @@
     "node-polyglot": "^2.3.0",
     "raw-loader": "^0.5.1",
     "release-it": "^7.6.3",
-    "vue": "^2.5.21",
-    "vue-dplayer": "^0.0.10"
+    "vue": "^2.5.21"
   }
 }

@@ -4,6 +4,7 @@
   "description": "test",
   "author": "shigma <1700011071@pku.edu.cn>",
   "main": "dist/index.js",
+  "license": "MIT",
   "files": [
     "dist"
   ],
