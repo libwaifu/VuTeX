@@ -1,6 +1,6 @@
 {
   "name": "@vutex/vuepress-plugin-math",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A vuepress plugin which provides support for latex syntax in markdown files.",
   "author": "shigma <1700011071@pku.edu.cn>",
   "license": "MIT",

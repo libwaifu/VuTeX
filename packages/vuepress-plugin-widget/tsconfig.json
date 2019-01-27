@@ -4,6 +4,6 @@
         "lib"
     ],
     "compilerOptions": {
-        "outDir": "../node_modules/@out"
+        "outDir": "dist"
     }
 }
