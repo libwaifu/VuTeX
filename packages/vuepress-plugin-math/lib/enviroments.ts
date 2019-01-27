@@ -1,13 +1,5 @@
 const container = require('markdown-it-container')
 
-/*
-    .use(container, 'vue', {
-      render: (tokens, idx) => tokens[idx].nesting === 1
-        ? `<pre class="vue-container"><code>`
-        : `</code></pre>`
-    })
-*/
-
 module.exports = md => {
   md.use(...createContainer('def', 'Definition'))
   md.use(...createContainer('theo', 'Theorem'))
@@ -18,11 +10,8 @@ module.exports = md => {
   md.use(...createContainer('conj', 'Conjecture'))
 }
 
-
-
-
-function capitalize(str) {
-  return str.toLowerCase().replace(/\b[a-z]/g,function(s){return s.toUpperCase()})
+function capitalize(str: string) {
+  return str.toLowerCase().replace(/\b[a-z]/g, char => char.toUpperCase())
 }
 
 function createContainer (klass, defaultTitle) {
@@ -39,5 +28,3 @@ function createContainer (klass, defaultTitle) {
     }
   }]
 }
-
-

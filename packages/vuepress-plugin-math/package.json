@@ -4,8 +4,11 @@
   "description": "test",
   "author": "test",
   "main": "index.js",
+  "scripts": {
+    "build": "stylus styles/index.styl -o dist/index.css -P -r"
+  },
   "devDependencies": {
-    "@types/node": "^10.12.18",
-    "@types/markdown-it": "^0.0.7"
+    "@types/markdown-it": "^0.0.7",
+    "@types/node": "^10.12.18"
   }
 }
