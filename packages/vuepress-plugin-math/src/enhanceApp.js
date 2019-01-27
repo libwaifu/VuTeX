@@ -1,5 +1,5 @@
 import '../styles/index.styl';
-import parseMacro from '../lib/charMacro';
+import parseMacro from '../dist/charMacro';
 
 export default ({ Vue }) => {
   if (window.MathJax) return;

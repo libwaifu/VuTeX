@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { isExternal, isMailto, ensureExt } from '../lib/util';
+import { isExternal, isMailto, ensureExt } from '../dist/util';
 
 export default {
   props: {

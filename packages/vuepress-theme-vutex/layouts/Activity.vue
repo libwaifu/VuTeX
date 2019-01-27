@@ -7,7 +7,6 @@
         <p class="description">
           {{ data.tagline }}
         </p>
-        <p>
           <div v-if="actions && actions.length">
             <Particle>
               <span class="action" v-for="(action, index) in actions" :key="index">
@@ -22,7 +21,6 @@
               </span>
             </Particle>
           </div>
-        </p>
       </div>
       <div class="features" v-if="data.features && data.features.length">
         <div class="feature" v-for="(feature, index) in data.features" :key="index">
@@ -40,7 +38,7 @@
 
 <script>
 import AnimationButton from '../components/AnimationButton.vue';
-import Particle from '../animation/particleBoom.vue';
+import Particle from '../components/particleBoom.vue';
 
 export default {
   components: { Particle, AnimationButton },

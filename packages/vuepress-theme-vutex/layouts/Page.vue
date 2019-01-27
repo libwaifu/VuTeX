@@ -37,7 +37,7 @@ import {
   normalize,
   endingSlashRE,
   pageNormalize
-} from '../lib/util';
+} from '../dist/util';
 
 export default {
   // components: { Comment },

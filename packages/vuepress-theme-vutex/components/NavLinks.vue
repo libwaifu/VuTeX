@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { isActive, resolveNavLinkItem } from '../lib/util'
+import { isActive, resolveNavLinkItem } from '../dist/util'
 import NavLink from './NavLink.vue'
 
 export default {

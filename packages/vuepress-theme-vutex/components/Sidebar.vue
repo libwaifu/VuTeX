@@ -6,7 +6,7 @@
 
 <script>
 import NavLinks from './NavLinks.vue'
-import { isActive } from '../lib/util'
+import { isActive } from '../dist/util'
 
 export default {
   components: { NavLinks },

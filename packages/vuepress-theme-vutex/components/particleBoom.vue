@@ -9,7 +9,7 @@
 
 <script>
 import html2canvas from 'html2canvas';
-import { ExplodingParticle } from '../lib/animation';
+import { ExplodingParticle } from '../dist/animation';
 
 export default {
   data() {

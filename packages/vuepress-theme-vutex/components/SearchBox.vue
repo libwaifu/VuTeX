@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { pageNormalize } from "../lib/util";
+import { pageNormalize } from "../dist/util";
 
 export default {
   data() {
