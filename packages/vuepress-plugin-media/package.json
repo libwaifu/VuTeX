@@ -1,12 +1,12 @@
 {
-  "name": "@vutex/vuepress-plugin-media",
-  "version": "0.1.0",
-  "description": "test",
-  "author": "shigma <1700011071@pku.edu.cn>",
-  "license": "MIT",
-  "main": "index.js",
-  "dependencies": {
-    "@moefe/vue-aplayer": "^2.0.0-beta.5",
-    "vue-dplayer": "^0.0.10"
-  }
+    "name": "@vutex/vuepress-plugin-media",
+    "version": "0.1.0",
+    "description": "test",
+    "author": "shigma <1700011071@pku.edu.cn>",
+    "license": "MIT",
+    "main": "index.js",
+    "dependencies": {
+        "@moefe/vue-aplayer": "^2.0.0-beta.5",
+        "vue-dplayer": "^0.0.10"
+    }
 }

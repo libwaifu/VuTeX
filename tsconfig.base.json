@@ -3,5 +3,5 @@
         "declaration": true,
         "module": "commonjs",
         "target": "esnext"
-    },
+    }
 }
