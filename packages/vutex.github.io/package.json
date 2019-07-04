@@ -9,6 +9,6 @@
   },
   "devDependencies": {
     "@vutex/vuepress-theme-vutex": "^0.1.0",
-    "vuepress": "^1.0.0-alpha.30"
+    "vuepress": "^1.0.2"
   }
 }

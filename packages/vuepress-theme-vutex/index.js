@@ -9,7 +9,7 @@ module.exports = {
                 music: 'audio',
             },
         },
-        '@vutex/math': {},
+        'mathjax': {},
         '@vutex/media': {},
         '@vuepress/google-analytics': {},
         '@vuepress/back-to-top': {},
@@ -17,17 +17,26 @@ module.exports = {
         '@vuepress/register-components': {
             componentsDir: [path.resolve(__dirname, 'components')],
         },
-        '@yubisaki/blog': {
-            pageEnhancers: [
-                {
-                    when: ({ frontmatter }) => 
-                        frontmatter.layout === 'Activity',
-                    frontmatter: { layout: 'Activity' },
+        '@vuepress/blog': {
+            directories: [{
+                id: 'post',
+                dirname: '_posts',
+                path: '/',
+                pagination: {
+                    perPagePosts: 2,
                 },
-            ],
-            tagUrl: '/tag/',
-            categoryUrl: '/category/',
+            }],
+            frontmatters: [{
+                id: 'tag',
+                keys: ['tag', 'tags'],
+                path: '/tag/',
+                layout: 'Tag',
+                frontmatter: { title: 'Tag' },
+                itemlayout: 'Tag',
+                pagination: {
+                    perPagePosts: 3
+                },
+            }],
         },
-        '@yubisaki/pagination': {},
     },
 };
